@@ -3,12 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>Coffee Shop</title>
+  <style>
+    body {
+      background-color: pink;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to the cafe!/h1>
+  <h1>Welcome to Java Bliss Coffee</h1>
   <p>Please select an item from our menu and complete your order below.</p>
 
   <form action="thankyou.html" method="post">
+    
+    <label for="customerName">Your Name:</label>
+    <input type="text" id="customerName" name="customerName" required>
+    <br><br>
+
     <h2>Select Your Drink</h2>
     <input type="checkbox" name="drink" value="Latte"> Latte - $4.00<br>
     <input type="checkbox" name="drink" value="Espresso"> Espresso - $2.00<br>
